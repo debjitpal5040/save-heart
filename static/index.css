@@ -1,0 +1,76 @@
+﻿*{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    text-align: center;
+    background-image:
+    radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+    radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 300%;
+}
+
+label{
+    font-size: 25px;
+    color: yellow;
+}
+
+label[for="trestbps"],[for="chol"],[for="thalach"],[for="oldpeak"],[for="slope"],[for="ca"],[for="restecg"],[for="age"]{
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+    margin-right: 20px;
+}
+
+input[type="text"] {
+    width: 12%;
+    padding: 3px 5px;
+    margin: 10px 0;
+    background-color: whitesmoke;
+    color: navy;
+}
+
+input[type="text"]:focus , input[type="number"]:focus {
+    background-color: lightcoral;
+}
+
+input[type="reset"] {
+    background-color: maroon;
+    border-radius: 10%;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: red;
+}
+
+button[type=submit] {
+    padding: 10px;
+    background: goldenrod;
+    border-radius: 10%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+input[type="radio"] + label {
+    color: greenyellow;
+    font-size: 20px;
+}
