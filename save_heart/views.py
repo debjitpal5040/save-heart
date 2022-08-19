@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from joblib import load
 
-clf = load("Notebooks/lr_model.joblib")
+clf = load("Notebooks/dt_model.joblib")
 def index(req):
     return render(req,'index.html')
 
