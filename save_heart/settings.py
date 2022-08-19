@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g62-)5k48$cfntm--bs^g*gsgc+min369elcyagbe@e*owaa8v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['save-heart.herokuapp.com', '127.0.0.1']
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
