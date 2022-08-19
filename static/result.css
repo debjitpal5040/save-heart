@@ -16,8 +16,12 @@ h1 {
     font-size: 350%;
 }
 
-h2 {
+#safe{
     color: lime;
+}
+
+#unsafe{
+    color: crimson;
 }
 
 h3{

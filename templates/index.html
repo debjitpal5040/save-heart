@@ -22,7 +22,7 @@
     <body>
         <h1>Welcome to Save-Heart</h1>
 
-        <form method="post" action="result">
+        <form method="post" action="result" autocomplete="on">
             {% csrf_token %}
             <label for="age"><b>Age</b></label>
             <input type="number" name="age" id="age" min="18" max="99" value="50">
