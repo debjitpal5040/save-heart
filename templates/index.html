@@ -2,31 +2,66 @@
 <html lang="en">
 
     <head>
+        <!--------- Meta Tags --------->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Heart-Saver</title>
+        <title>Save-Heart</title>
+        <!--------- External CSS files --------->
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+        <!--------- Favicon --------->
+        <link rel="icon" type="image/png" href="media/logo.png">
+        <title>Heart-Saver</title>
     </head>
 
 
     <body>
-        <h1>Welcome to Heart-Saver</h1>
+        <h1>Welcome to Save-Heart</h1>
 
         <form method="post" action="result">
             {% csrf_token %}
             <label for="age"><b>Age</b></label>
-            <input type="number" name="age" id="age" min="18" max="99" value="50"><br>
+            <input type="number" name="age" id="age" min="18" max="99" value="50">
 
             <label for="sex"><b>Sex</b></label>
-            <input type="radio" name="sex" id="female" value="0" required>
-            <label for="female">Female</label>
             <input type="radio" name="sex" id="male" value="1" required>
-            <label for="male">Male</label><br>
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="0" required>
+            <label for="female">Female</label><br>
+
+
+            <label for="exang"><b>Exercise Induced Angina</b></label>
+            <input type="radio" name="exang" id="yes" value="1" required>
+            <label for="yes">Yes</label>
+            <input type="radio" name="exang" id="no" value="0" required>
+            <label for="no">No</label><br>
+
+            <label for="fbs"><b>Fasting Blood Sugar (mg/dl)</b></label>
+            <input type="radio" name="fbs" id="120-" value="0" required>
+            <label for="120-">≤ 120</label>
+            <input type="radio" name="fbs" id="120+" value="1" required>
+            <label for="120+">> 120</label><br>
+
+            <label for="trestbps"><b>Resting Blood Pressure</b></label>
+            <input type="text" name="trestbps" id="trestbps" placeholder="e.g. 130" required><br>
+
+            <label for="chol"><b>Serum Cholesterol</b></label>
+            <input type="text" name="chol" id="chol" placeholder="e.g. 197" required></input><br>
+
+            <label for="thalach"><b>Maximum Heart Rate </b></label>
+            <input type="text" name="thalach" id="thalach" placeholder="e.g. 162" required><br>
+
+            <label for="thal"><b>Thalassemia</b></label>
+            <input type="radio" name="thal" id="normal" value="1" required>
+            <label for="normal">Normal</label>
+            <input type="radio" name="thal" id="fixed defect" value="2" required>
+            <label for="fixed defect">Fixed defect</label>
+            <input type="radio" name="thal" id="reversible defect" value="3" required>
+            <label for="reversible defect">Reversible defect</label><br>
 
             <label for="cp"><b>Chest pain type</b></label>
             <input type="radio" name="cp" id="no pain" value="0" required>
@@ -37,35 +72,6 @@
             <label for="moderate pain">Moderate pain</label>
             <input type="radio" name="cp" id="severe pain" value="3" required>
             <label for="severe pain">Severe pain</label><br>
-
-            <label for="trestbps"><b>Trestbps</b></label>
-            <input type="text" name="trestbps" id="trestbps" placeholder="e.g. 130" required><br>
-
-            <label for="chol"><b>Chol</b></label>
-            <input type="text" name="chol" id="chol" placeholder="e.g. 197" required></input><br>
-
-            <label for="fbs"><b>Fasting Blood Sugar(mg/dl)</b></label>
-            <input type="radio" name="fbs" id="120-" value="0" required>
-            <label for="120-">≤ 120</label>
-            <input type="radio" name="fbs" id="120+" value="1" required>
-            <label for="120+">> 120</label><br>
-
-            <label for="thalach"><b>Thalach</b></label>
-            <input type="text" name="thalach" id="thalach" placeholder="e.g. 162" required><br>
-
-            <label for="exang"><b>Exercise Induced Angina</b></label>
-            <input type="radio" name="exang" id="no" value="0" required>
-            <label for="no">No</label>
-            <input type="radio" name="exang" id="yes" value="1" required>
-            <label for="yes">Yes</label><br>
-
-            <label for="thal"><b>Thal</b></label>
-            <input type="radio" name="thal" id="normal" value="1" required>
-            <label for="normal">Normal</label>
-            <input type="radio" name="thal" id="fixed defect" value="2" required>
-            <label for="fixed defect">Fixed defect</label>
-            <input type="radio" name="thal" id="reversible defect" value="3" required>
-            <label for="reversible defect">Reversible defect</label><br>
 
             <input type="reset">
             <button type="submit" value="predict">Submit</button>
