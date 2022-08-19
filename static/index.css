@@ -1,6 +1,6 @@
 ﻿*{
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'DynaPuff', cursive;
 }
 
 body {
@@ -13,19 +13,21 @@ body {
 
 h1 {
     color: antiquewhite;
-    font-size: 300%;
+    font-size: 400%;
 }
 
 label{
     font-size: 25px;
     color: yellow;
+    margin-bottom: 10px;
 }
 
-label[for="trestbps"],[for="chol"],[for="thalach"],[for="oldpeak"],[for="slope"],[for="ca"],[for="restecg"],[for="age"]{
+label[for="trestbps"],[for="chol"],[for="thalach"],[for="age"]{
     display: inline-block;
     text-align: right;
     width: 60px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -73,4 +75,5 @@ input[type="range"] {
 input[type="radio"] + label {
     color: greenyellow;
     font-size: 20px;
+    margin-bottom: 20px;
 }
