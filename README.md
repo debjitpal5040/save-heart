@@ -75,3 +75,14 @@ Aim for this project is to use my ML skills to predict the chances of a person w
 8. exercise induced angina (yes = 1, no = 0)
 9. thalassemia (normal = 0; fixed defect = 1 (no blood flow in some part of the heart), reversible defect = 2 (a blood flow is observed but it is not normal))
 10. target (0 = less chance of heart attack, 1= more chance of heart attack)
+
+## Home Page
+<img width="1440" alt="Screenshot 2022-08-20 at 09 41 20" src="https://user-images.githubusercontent.com/76846542/185728502-eb780885-49ce-4b1c-9786-0f68671e33ba.png">
+
+## Predictions
+
+<img width="1440" alt="Screenshot 2022-08-20 at 09 41 34" src="https://user-images.githubusercontent.com/76846542/185728530-1d9b43dc-457f-4836-bc7a-beb0e5059f24.png">
+
+
+
+
