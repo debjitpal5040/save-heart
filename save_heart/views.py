@@ -1,6 +1,6 @@
 """views.py"""
-from django.shortcuts import render
 import numpy as np
+from django.shortcuts import render
 from joblib import load
 
 clf = load("Notebooks/dt_model.joblib")
