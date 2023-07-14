@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'DynaPuff', cursive;
 }
@@ -6,8 +6,8 @@
 body {
     text-align: center;
     background-image:
-    radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
-    radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
+        radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+        radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
     background-attachment: fixed;
 }
 
@@ -16,15 +16,15 @@ h1 {
     font-size: 350%;
 }
 
-#safe{
+#safe {
     color: lime;
 }
 
-#unsafe{
+#unsafe {
     color: crimson;
 }
 
-h3{
+h3 {
     text-decoration: none;
     color: whitesmoke;
 }

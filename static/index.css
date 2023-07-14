@@ -1,4 +1,4 @@
-﻿*{
+﻿* {
     box-sizing: border-box;
     font-family: 'DynaPuff', cursive;
 }
@@ -6,8 +6,8 @@
 body {
     text-align: center;
     background-image:
-    radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
-    radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
+        radial-gradient(50% 30% ellipse at center bottom, #3d32c0ca 0%, rgba(53, 103, 195, 0.555) 100%),
+        radial-gradient(60% 50% ellipse at center top, #646262 0%, #000000 100%);
     background-attachment: fixed;
 }
 
@@ -16,7 +16,7 @@ h1 {
     font-size: 350%;
 }
 
-label{
+label {
     display: inline-block;
     text-align: right;
     font-size: 25px;
@@ -25,7 +25,9 @@ label{
     margin-right: 15px;
 }
 
-label [for="trestbps"], [for="chol"], [for="thalach"]{
+label [for="trestbps"],
+[for="chol"],
+[for="thalach"] {
     width: 290px;
 }
 
@@ -39,18 +41,19 @@ input[type="text"] {
     font-size: 20px;
 }
 
-input[type="number"]{
+input[type="number"] {
     background-color: wheat;
     color: red;
     font-size: 20px;
     margin-right: 30px;
 }
 
-input[type="text"]:focus, input[type="number"]:focus {
+input[type="text"]:focus,
+input[type="number"]:focus {
     background-color: black;
 }
 
-input[type="radio"] + label {
+input[type="radio"]+label {
     color: greenyellow;
     font-size: 20px;
     margin-top: 15px;
