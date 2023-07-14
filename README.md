@@ -3,7 +3,7 @@
 ## Description
 
 Is your heart healthy enough? Do you want to predict whether you risk a heat attack? Then this tool is for you!<br/>
-Aim for this project is to use my ML skills to predict the chances of a person will suffer from a heart attack.<br/> 
+Aim for this project is to use my ML skills to predict the chances of a person will suffer from a heart attack.<br/>
 
 ## Project structure
 
@@ -33,7 +33,6 @@ Aim for this project is to use my ML skills to predict the chances of a person w
 - `save-heart.csv` is the dataset used for the notebook `save-heart.ipynb`
 - `dt_model.joblib` is the dumped file made from `save-heart.ipynb`
 
-
 ## Prerequisites
 
 ### Software Needed
@@ -51,7 +50,7 @@ Aim for this project is to use my ML skills to predict the chances of a person w
   1. Basic syntax and working of `python`.(This is a must)
   2. Basic knowledge of Data Science libraries like `numpy`, `pandas`, `matplotlib`, `seaborn`.
   3. Basic knowledge of `Scikit-learn`.
-  4. Knowledge of various ML models. 
+  4. Knowledge of various ML models.
   5. Knowledge of Django.
 
 - For the web app
@@ -70,19 +69,16 @@ Aim for this project is to use my ML skills to predict the chances of a person w
    -- Value 3: severe pain
 4. resting blood pressure (in mm Hg on admission to the hospital)
 5. serum cholestoral in mg/dl
-6. fasting blood sugar in mg/dl (> 120  = 1, <= 120 = 0)
+6. fasting blood sugar in mg/dl (> 120 = 1, <= 120 = 0)
 7. maximum heart rate achieved
 8. exercise induced angina (yes = 1, no = 0)
 9. thalassemia (normal = 0; fixed defect = 1 (no blood flow in some part of the heart), reversible defect = 2 (a blood flow is observed but it is not normal))
 10. target (0 = less chance of heart attack, 1= more chance of heart attack)
 
 ## Home Page
+
 <img width="1440" alt="Screenshot 2022-08-20 at 09 41 20" src="https://user-images.githubusercontent.com/76846542/185728502-eb780885-49ce-4b1c-9786-0f68671e33ba.png">
 
 ## Predictions
 
 <img width="1440" alt="Screenshot 2022-08-20 at 09 41 34" src="https://user-images.githubusercontent.com/76846542/185728530-1d9b43dc-457f-4836-bc7a-beb0e5059f24.png">
-
-
-
-
