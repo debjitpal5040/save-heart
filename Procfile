@@ -1,1 +1,0 @@
-web: gunicorn save_heart.wsgi
